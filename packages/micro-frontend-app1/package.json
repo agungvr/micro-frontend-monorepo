@@ -2,7 +2,7 @@
   "name": "@vr/app1",
   "version": "1.0.0",
   "engines": {
-    "node": "16.x"
+    "node": "16.14.2"
   },
   "scripts": {
     "dev": "webpack serve --port 3001",
