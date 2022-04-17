@@ -1,12 +1,18 @@
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 const server = express();
 
-server.use(cors());
+server.use(
+  cors({
+    methods: "GET",
+  })
+);
+
 server.use(express.static(path.join(__dirname, "public")));
+
 server
   .use(express.static(path.join(__dirname, "dist")))
   .get("*", (req, res) => {

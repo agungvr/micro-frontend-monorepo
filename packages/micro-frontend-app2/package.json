@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "webpack serve --port 3002",
     "dev:standalone": "webpack serve --env standalone",
+    "start": "node server.js",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
@@ -56,6 +57,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
