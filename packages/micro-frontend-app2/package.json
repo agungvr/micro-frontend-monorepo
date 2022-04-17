@@ -2,8 +2,8 @@
   "name": "@vr/app2",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve --port 3002",
-    "start:standalone": "webpack serve --env standalone",
+    "dev": "webpack serve --port 3002",
+    "dev:standalone": "webpack serve --env standalone",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",

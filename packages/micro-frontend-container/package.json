@@ -2,8 +2,8 @@
   "name": "@vr/root-config",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve --port 3000 --env isLocal",
-    "start:server": "node server.js",
+    "dev": "webpack serve --port 3000 --env isLocal",
+    "start": "node server.js",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write .",
