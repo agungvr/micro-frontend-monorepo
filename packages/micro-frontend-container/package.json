@@ -1,6 +1,9 @@
 {
   "name": "@vr/root-config",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "webpack serve --port 3000 --env isLocal",
     "start": "node server.js",

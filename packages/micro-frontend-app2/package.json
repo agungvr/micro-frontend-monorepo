@@ -1,6 +1,9 @@
 {
   "name": "@vr/app2",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "webpack serve --port 3002",
     "dev:standalone": "webpack serve --env standalone",
