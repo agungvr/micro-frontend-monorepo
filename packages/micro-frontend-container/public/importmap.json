@@ -3,8 +3,8 @@
     "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
     "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
     "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.3/lib/system/single-spa.min.js",
-    "@vr/root-config": "http://localhost:3000/vr-root-config.js",
-    "@vr/app1": "http://localhost:3001/vr-app1.js",
-    "@vr/app2": "http://localhost:3002/vr-app2.js"
+    "@vr/root-config": "https://vr-mf-container.herokuapp.com/vr-root-config.js",
+    "@vr/app1": "https://vr-mf-app1.herokuapp.com/vr-app1.js",
+    "@vr/app2": "https://vr-mf-app2.herokuapp.com/vr-app2.js"
   }
 }
