@@ -21,7 +21,6 @@
     "@babel/preset-typescript": "^7.15.0",
     "@babel/runtime": "^7.15.3",
     "concurrently": "^6.2.1",
-    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -48,6 +47,7 @@
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
     "express": "^4.17.3",
+    "cors": "^2.8.5",
     "pubsub-js": "^1.9.4",
     "single-spa": "^5.9.3",
     "single-spa-layout": "^1.6.0"
