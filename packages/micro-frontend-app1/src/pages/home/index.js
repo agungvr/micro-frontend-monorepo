@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Agung Ganteng</p>
+        <p>Micro Frontend Monorepo</p>
         <div className="mb12">
           <Link to="/about">About</Link>
         </div>
