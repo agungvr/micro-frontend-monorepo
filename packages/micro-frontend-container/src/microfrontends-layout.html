@@ -1,0 +1,11 @@
+<single-spa-router>
+  <main>
+    <route path="app2/:path">
+      <application name="@vr/app2" props="publish,subscribe"></application>
+      <redirect from="/app2" to="/"></redirect>
+    </route>
+    <route default>
+      <application name="@vr/app1" props="publish,subscribe"></application>
+    </route>
+  </main>
+</single-spa-router>
