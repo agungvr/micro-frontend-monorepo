@@ -40,3 +40,16 @@
     transform: rotate(360deg);
   }
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+a:hover {
+  color: gray;
+}
+
+.card-wrapper {
+  display: flex;
+}
