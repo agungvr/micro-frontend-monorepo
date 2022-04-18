@@ -6,9 +6,9 @@
     "yarn": "1.x"
   },
   "scripts": {
-    "dev": "webpack serve --port 3002",
+    "devs": "webpack serve --port 3002",
     "dev:standalone": "webpack serve --env standalone",
-    "start": "node server.js",
+    "cok": "node server.js",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",

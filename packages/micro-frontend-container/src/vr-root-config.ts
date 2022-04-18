@@ -1,4 +1,10 @@
-import { registerApplication, start } from "single-spa";
+import {
+  registerApplication,
+  start,
+  addErrorHandler,
+  getAppStatus,
+  LOAD_ERROR,
+} from "single-spa";
 import {
   constructApplications,
   constructRoutes,
@@ -17,6 +23,12 @@ const routes = constructRoutes(Layout, {
     publish,
     subscribe,
   },
+});
+
+addErrorHandler((err) => {
+  if (getAppStatus(err.appOrParcelName) === LOAD_ERROR) {
+    System.delete(System.resolve(err.appOrParcelName));
+  }
 });
 
 const applications = constructApplications({

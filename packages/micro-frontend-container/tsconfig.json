@@ -2,7 +2,8 @@
   "extends": "ts-config-single-spa",
   "files": ["src/vr-root-config.ts"],
   "compilerOptions": {
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true
   },
   "include": ["src/**/*"],
   "exclude": ["src/**/*.test*"]

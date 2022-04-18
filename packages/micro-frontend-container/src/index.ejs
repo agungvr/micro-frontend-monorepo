@@ -34,15 +34,6 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
-    <script type="systemjs-importmap">
-      {
-        "imports": {
-          "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
-          "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js",
-          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
-        }
-      }
-    </script>
     <link
       rel="preload"
       href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
@@ -56,6 +47,9 @@
     <script type="systemjs-importmap">
       {
         "imports": {
+          "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.development.js",
+          "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.development.js",
+          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.dev.js",
           "@vr/root-config": "//localhost:3000/vr-root-config.js",
           "@vr/app1": "http://localhost:3001/vr-app1.js",
           "@vr/app2": "http://localhost:3002/vr-app2.js"
@@ -88,8 +82,6 @@
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <script>
       System.import("@vr/root-config");
-      System.import("@vr/app1");
-      System.import("@vr/app2");
     </script>
     <import-map-overrides-full
       show-when-local-storage="devtools"

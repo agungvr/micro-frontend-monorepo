@@ -1,9 +1,12 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import { Card as CardApp2 } from "@vr/app2";
 
-import CardApp1 from "../../components/Card";
 import logo from "../../assets/images/logo.svg";
+import CardApp1 from "../../components/Card";
+import { importModule } from "../../utils/importModule";
 import "./home.css";
+
+const CardApp2 = importModule("@vr/app2", "Card");
 
 function App() {
   return (

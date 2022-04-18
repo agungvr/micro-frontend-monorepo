@@ -2,7 +2,8 @@
   "extends": "ts-config-single-spa",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true
   },
   "files": ["src/vr-app2.tsx"],
   "include": ["src/**/*"],

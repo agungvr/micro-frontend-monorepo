@@ -13,5 +13,4 @@ const lifecycles = singleSpaReact({
     return null;
   },
 });
-
 export const { bootstrap, mount, unmount } = lifecycles;

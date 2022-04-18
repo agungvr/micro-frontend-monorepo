@@ -9,11 +9,10 @@ module.exports = (webpackConfigEnv, argv) => {
     argv,
   });
 
-  return merge(defaultConfig, {
+  const config = merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
     externals: ["@vr/app2"],
-    output: {
-      libraryTarget: "system",
-    },
   });
+
+  return config;
 };
