@@ -8,6 +8,7 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build && lerna run start --stream",
     "dev": "lerna run dev --stream",
+    "deploy:all": "yarn deploy:container && yarn deploy:app1 && yarn deploy:app2",
     "deploy:container": "heroku git:remote -a vr-mf-container && git subtree push --prefix packages/micro-frontend-container heroku main",
     "deploy:app1": "heroku git:remote -a vr-mf-app1 && git subtree push --prefix packages/micro-frontend-app1 heroku main",
     "deploy:app2": "heroku git:remote -a vr-mf-app2 && git subtree push --prefix packages/micro-frontend-app2 heroku main"
